@@ -1,0 +1,6 @@
+{
+  "name": "Isabela Assessoria",
+  "description": "ISABELA - Assessoria e gestão médica remota especializada para médicos e consultórios de saúde.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
