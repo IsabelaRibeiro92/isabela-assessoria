@@ -1,5 +1,5 @@
 import React from "react";
-import { MessageCircle, Mail, Instagram, ArrowUp } from "lucide-react";
+import { MessageCircle, Mail, Instagram, ArrowUp, FileSpreadsheet } from "lucide-react";
 import { siteConfig, getWhatsAppUrl } from "../config/siteConfig";
 
 interface FooterProps {
@@ -92,6 +92,17 @@ export const Footer: React.FC<FooterProps> = ({ onOpenPrivacy }) => {
                 >
                   Política de Privacidade
                 </button>
+              </li>
+              <li>
+                <a
+                  href="/api/propostas?format=csv"
+                  download="propostas_isabela_assessoria.csv"
+                  className="text-[#9C968E] hover:text-[#FAF9F6] transition-colors inline-flex items-center gap-1.5 text-xs pt-1 opacity-80 hover:opacity-100"
+                  title="Exportar planilha de solicitações registradas (CSV para Excel/Google Planilhas)"
+                >
+                  <FileSpreadsheet className="w-3.5 h-3.5 text-[#C2A67E]" />
+                  <span>Exportar Propostas (CSV)</span>
+                </a>
               </li>
             </ul>
           </div>
